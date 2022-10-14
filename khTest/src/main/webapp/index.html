@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kH 홈페이지</title>
+    <link rel="stylesheet" href="resource/css/index.css">
+    
+    <script src="https://kit.fontawesome.com/f7459b8054.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <main>
+        <header>
+            <!-- 로그창 -->
+            <section>
+                <!-- <a></a> 태그는 하이퍼링크를 걸어주는 태그  href: 클릭시 이동 할 링크;-->
+                <a href="#">
+                    <img src="resource/images/logo.jpg" id="home-logo">
+                </a>
+            </section>
+
+            <!-- 검색창 -->
+            <section>
+				<article class="search-area">
+					<form action="#">
+						<fieldset>
+							<input type="text" id="query" name="query"
+							placeholder="검색어를 입력해주세요.">
+							<button type="submit" id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+						</fieldset>
+					</form>
+				</article>
+            </section>
+
+            <!-- 끝에 빈 곳 -->
+            <section></section>
+        </header>
+
+        <nav>
+            <ul>
+                <!-- a inline 형식이라서 수평분할 
+                딱 글자만큼만 해당됨 -->
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자유 게시판</a></li>
+                <li><a href="#">질문 게시판</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">1:1문의</a></li>
+            </ul>
+        </nav>
+
+        <!-- 본문 쪽 -->
+        <section class="content">
+            <!-- 본문 중심 내용 -->
+            <section class="content-1"></section>
+            <!-- 로그인 있는 곳  -->
+            <section class="content-2">
+                <form action="/khTest/login" method = "post" name="login-frm">
+
+                    <!-- 아이디, 비밀번호, 로그인 버튼 -->
+                    <fieldset id="id-pw-area">
+                        <section>
+                            <input type="text" name="inputId" placeholder="아이디"
+                            autocomplete="off">
+                            <!-- autocomplete="off" : 자동완성 사용 X -->
+                            <input type="password" name="inputPW" placeholder="비밀번호">
+                        </section>
+        
+                        <section>
+                            <!-- type="submit"이 기본값 -->
+                            <button>로그인</button>
+                        </section>
+                    </fieldset>
+        
+                    <!-- label 태그 내부에 input태그를 작성하면 자동 연결됨 -->
+                    <label>
+                        <input type="checkbox" name="saveId"> 아이디저장
+                    </label>
+        
+                    <!-- 회원가입/ ID/PW 찾기 -->
+                    <article id="signUp-find-area">
+                        <a href="#">회원가입</a>
+                        <span>|</span>
+                        <a href="#">ID/PW찾기</a>
+                    </article>
+                </form>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Copyright &copy; KH Information Educational Institute A-Class
+        </p>
+
+        <article>
+            <a href="">프로젝트 소개</a>
+            <span>|</span>
+            <a href="">이용약관</a>
+            <span>|</span>
+            <a href="">개인정보처리방침</a>
+            <span>|</span>
+            <a href="">고객센터</a>
+        </article>
+    </footer>
+</body>
+</html>
