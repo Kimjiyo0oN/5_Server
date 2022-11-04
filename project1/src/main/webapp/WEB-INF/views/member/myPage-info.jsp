@@ -61,7 +61,7 @@
                     <div class="myPage-row info-address">
                         <input type="text" name="memberAddress" id="sample6_detailAddress" value="${addr[2]}" placeholder="상세주소">
                     </div>
-
+ 
                     <button class="myPage-submit">수정하기</button>
                 </form>
             </section>
